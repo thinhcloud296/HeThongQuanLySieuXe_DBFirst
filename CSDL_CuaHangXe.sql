@@ -35,7 +35,8 @@ CREATE TABLE Xe (
     SoKhungXe NVARCHAR(50),
     MauSac NVARCHAR(50),
     NamSanXuat int,
-    GiaBanXe DECIMAL(20)
+    GiaBanXe DECIMAL(20),
+    HinhAnh NVARCHAR(200)
 );
 
 -- Bảng PhieuNhapKho
@@ -137,18 +138,18 @@ VALUES
 
 --select * from NhaCungCap
 --Bảng xe
-INSERT INTO Xe (MaXe, TenXe, HangXe, DongXe, SoKhungXe, MauSac, NamSanXuat, GiaBanXe) 
+INSERT INTO Xe (MaXe, TenXe, HangXe, DongXe, SoKhungXe, MauSac, NamSanXuat, GiaBanXe, HinhAnh) 
 VALUES 
-('XE001', 'Ford GT Heritage Edition', 'Ford', 'Hypercar', 'fo001', 'Trắng', 2021, 1436462),
-('XE002', 'Pagani Huayra', 'Pagani', 'Hypercar', 'pa001', 'Xám', 2014, 4000125),
-('XE003', 'Ferrari SF90 Stradale', 'Ferrari', 'Supercar', 'fe001', 'Đỏ', 2021, 464900),
-('XE004', 'Lamborghini Aventador SVJ', 'Lamborghini', 'Supercar', 'la001', 'Trắng', 2020, 523000),
-('XE005', 'Audi R8 V10 Performance', 'Audi', 'Supercar', 'ad001', 'Trắng', 2022, 193492),
-('XE006', 'Chevrolet Corvette', 'Chevrolet', 'Supercar', 'cv001', 'Trắng', 2021,89907),
-('XE007', 'Mercedes-Benz AMG® G 63', 'Mercedes-Benz', 'SUV', 'mc001', 'Trắng', 2022, 162379),
-('XE008', 'Rolls-Royce Cullinan', 'Rolls-Royce', 'SUV', 'rr001', 'Đen', 2024, 524575),
-('XE009', 'Mercedes-Maybach S-Class', 'Mercedes-Benz', 'Luxury', 'mc002', 'Đen', 2025, 270400),
-('XE0010', 'Rolls Royce Ghost', 'Rolls-Royce', 'Luxury', 'rr002', 'Đen', 2025, 624575);
+('XE001', 'Ford GT Heritage Edition', 'Ford', 'Hypercar', 'fo001', N'Trắng', 2021, 1436462, 'fordgt.jpg'),
+('XE002', 'Pagani Huayra', 'Pagani', 'Hypercar', 'pa001', N'Xám', 2014, 4000125, '640-sieu-xe-Pagani-Huayra-BC.jpg'),
+('XE003', 'Ferrari SF90 Stradale', 'Ferrari', 'Supercar', 'fe001', N'Đỏ', 2021, 464900, 'sf90.jpg'),
+('XE004', 'Lamborghini Aventador SVJ', 'Lamborghini', 'Supercar', 'la001', N'Trắng', 2020, 523000, 'lamborghini-urus-16875333912111624025262-75-0-1080-1920-cr.jpg'), 
+('XE005', 'Audi R8 V10 Performance', 'Audi', 'Supercar', 'ad001', N'Trắng', 2022, 193492, 'audiR8.jpg'),
+('XE006', 'Chevrolet Corvette', 'Chevrolet', 'Supercar', 'cv001', N'Trắng', 2021, 89907, 'corvette.jpg'),
+('XE007', 'Mercedes-Benz AMG® G 63', 'Mercedes-Benz', 'SUV', 'mc001', N'Trắng', 2022, 162379, 'g63.jpg'),
+('XE008', 'Rolls-Royce Cullinan', 'Rolls-Royce', 'SUV', 'rr001', N'Đen', 2024, 524575, 'xehay-Rolls-Royce-Cullinan-review-270120 (4).jpg'),
+('XE009', 'Mercedes-Maybach S-Class', 'Mercedes-Benz', 'Luxury', 'mc002', N'Đen', 2025, 270400, 'mayback.jpg'),
+('XE010', 'Rolls Royce Ghost', 'Rolls-Royce', 'Luxury', 'rr002', N'Đen', 2025, 624575, 'rolls-royce-ghost-black.jpg');
 
 
 --select * from Xe;
@@ -164,10 +165,4 @@ VALUES
 ('PN007', 'XE007', 'NCC001', '2024-02-05', 7, 160000),
 ('PN008', 'XE008', 'NCC002', '2024-02-10', 2, 520000),
 ('PN009', 'XE009', 'NCC001', '2024-02-15', 5, 270000),
-('PN010', 'XE0010', 'NCC002', '2024-02-20', 2, 610000);
-
---select * from PhieuNhapKho;
-
-
-
-
+('PN010', 'XE010', 'NCC002', '2024-02-20', 2, 610000);
