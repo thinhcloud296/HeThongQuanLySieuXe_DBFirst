@@ -100,115 +100,170 @@
     <Content Include="App_Data\CuaHangXe_log.ldf">
       <DependentUpon>CuaHangXe.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\about.css" />
+    <Content Include="Content\blog.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\login.css" />
+    <Content Include="Content\main-mobile.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\shop.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\2.jpg" />
-    <Content Include="Images\2021_lamborghini_aventador-pic-8043279402242713751-1024x768.jpeg" />
     <Content Include="Images\3.jpg" />
     <Content Include="Images\640-sieu-xe-Pagani-Huayra-BC.jpg" />
     <Content Include="Images\732fa2_8a33cfd9076f4a728e13b51f16f2efed~mv2.jpg" />
     <Content Include="Images\audiR8.jpg" />
+    <Content Include="Images\August-Motorcars-Supercar-Showroom.jpg" />
     <Content Include="Images\corvette.jpg" />
-    <Content Include="Images\download.png" />
+    <Content Include="Images\dc35efe6a78d48e99fc915c167249cfd.jpg" />
+    <Content Include="Images\DS102853_480x480.jpg" />
+    <Content Include="Images\DS103882_2_480x480.jpg" />
     <Content Include="Images\f8.jpg" />
+    <Content Include="Images\ferrari-logo-1931.jpg" />
     <Content Include="Images\Ferrari-SF90-XX-1-5118-1688351681.jpg" />
+    <Content Include="Images\footer.jpg" />
     <Content Include="Images\fordgt.jpg" />
     <Content Include="Images\g63.jpg" />
-    <Content Include="Images\images.png" />
-    <Content Include="Images\lamborghini-logo-61f5d.jpg" />
+    <Content Include="Images\GB3K_2023_DAY4_DSC_3444_KIRANBCOX_2_480x480.jpg" />
+    <Content Include="Images\images %281%29.jpg" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\lamborghini-urus-16875333912111624025262-75-0-1080-1920-crop-1687533407701316181641.jpg" />
     <Content Include="Images\logo-ferrari-3.jpg" />
     <Content Include="Images\mayback.jpg" />
+    <Content Include="Images\mc20-hero.jpg" />
     <Content Include="Images\peguni-03-scaled.jpg" />
-    <Content Include="Images\Screenshot 2024-11-03 083812.png" />
+    <Content Include="Images\r.jpg" />
+    <Content Include="Images\renazzo-lamborghini-urus-performante-unveiled-thailand-motor-expo-2022-7-16699859694741013805461-crop-16699861242161368888932.jpg" />
+    <Content Include="Images\rolls-royce-ghost-black.jpg" />
+    <Content Include="Images\Screenshot 2024-11-03 083812.jpg" />
+    <Content Include="Images\Screenshot 2024-11-03 153608.jpg" />
     <Content Include="Images\sf90.jpg" />
     <Content Include="Images\xehay-Rolls-Royce-Cullinan-review-270120 %284%29 %281%29.jpg" />
     <Content Include="Images\xehay-Rolls-Royce-Cullinan-review-270120 %284%29.jpg" />
-    <Content Include="Models\SieuXeDB.Context.tt">
+    <Content Include="Models\SIeuXeDb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SieuXeDB.Context.cs</LastGenOutput>
-      <DependentUpon>SieuXeDB.edmx</DependentUpon>
+      <DependentUpon>SIeuXeDb.edmx</DependentUpon>
+      <LastGenOutput>SIeuXeDb.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\SieuXeDB.tt">
+    <Content Include="Models\SIeuXeDb.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SieuXeDB.edmx</DependentUpon>
-      <LastGenOutput>SieuXeDB.cs</LastGenOutput>
+      <DependentUpon>SIeuXeDb.edmx</DependentUpon>
+      <LastGenOutput>SIeuXeDb.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BaoHanhXe.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DichVu.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HoaDonBanHang.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HopDongMuaBan.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KhachHang.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NhaCungCap.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NhanVien.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PhieuNhapKho.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PhieuXuatKho.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SieuXeDB.Context.cs">
+    <Compile Include="Models\SIeuXeDb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SieuXeDB.Context.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SieuXeDB.cs">
+    <Compile Include="Models\SIeuXeDb.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SieuXeDB.Designer.cs">
+    <Compile Include="Models\SIeuXeDb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SieuXeDB.edmx</DependentUpon>
+      <DependentUpon>SIeuXeDb.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\TaiKhoan.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Xe.cs">
-      <DependentUpon>SieuXeDB.tt</DependentUpon>
+      <DependentUpon>SIeuXeDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Images\August-Motorcars-Supercar-Showroom.webp" />
-    <Content Include="Images\dc35efe6a78d48e99fc915c167249cfd.webp" />
-    <Content Include="Images\DS102853_480x480.webp" />
-    <Content Include="Images\DS103882_2_480x480.webp" />
-    <Content Include="Images\ferrari-logo-1931.webp" />
-    <Content Include="Images\GB3K_2023_DAY4_DSC_3444_KIRANBCOX_2_480x480.webp" />
-    <Content Include="Images\lamborghini-urus-16875333912111624025262-75-0-1080-1920-crop-1687533407701316181641.webp" />
-    <Content Include="Images\logo-ferrari-va-3-y-nghia-bieu-tuong-cua-toc-do-3.webp" />
-    <Content Include="Images\renazzo-lamborghini-urus-performante-unveiled-thailand-motor-expo-2022-7-16699859694741013805461-crop-16699861242161368888932.webp" />
-    <EntityDeploy Include="Models\SieuXeDB.edmx">
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <EntityDeploy Include="Models\SIeuXeDb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SieuXeDB.Designer.cs</LastGenOutput>
+      <LastGenOutput>SIeuXeDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\SieuXeDB.edmx.diagram">
-      <DependentUpon>SieuXeDB.edmx</DependentUpon>
+    <Content Include="Models\SIeuXeDb.edmx.diagram">
+      <DependentUpon>SIeuXeDb.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -216,9 +271,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

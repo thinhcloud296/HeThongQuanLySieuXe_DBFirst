@@ -13,10 +13,10 @@ namespace HeThongQuanLySieuXe.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CuaHangXeEntities : DbContext
+    public partial class CuaHangXeEntities1 : DbContext
     {
-        public CuaHangXeEntities()
-            : base("name=CuaHangXeEntities")
+        public CuaHangXeEntities1()
+            : base("name=CuaHangXeEntities1")
         {
         }
     

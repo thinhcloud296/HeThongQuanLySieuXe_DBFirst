@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="12351085dbbb4328a32f170c3ea42fd2" Name="Diagram1">
+      <Diagram DiagramId="8905aeb2929246b887afcce2e99d15bd" Name="Diagram1">
         <EntityTypeShape EntityType="CuaHangXeModel.BaoHanhXe" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangXeModel.DichVu" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangXeModel.HoaDonBanHang" Width="1.5" PointX="8.25" PointY="9" IsExpanded="true" />
@@ -15,7 +15,7 @@
         <EntityTypeShape EntityType="CuaHangXeModel.PhieuNhapKho" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangXeModel.PhieuXuatKho" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangXeModel.TaiKhoan" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuaHangXeModel.Xe" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangXeModel.Xe" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
         <AssociationConnector Association="CuaHangXeModel.FK__BaoHanhXe__MaKha__5535A963" ManuallyRouted="false" />
         <AssociationConnector Association="CuaHangXeModel.FK__BaoHanhXe__MaXe__5441852A" ManuallyRouted="false" />
         <AssociationConnector Association="CuaHangXeModel.FK__DichVu__MaKhachH__5165187F" ManuallyRouted="false" />

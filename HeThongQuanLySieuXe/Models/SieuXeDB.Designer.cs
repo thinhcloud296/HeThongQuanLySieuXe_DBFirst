@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\Code\C#\ASP.net MVC\HeThongQuanLySieuXe\HeThongQuanLySieuXe\Models\SieuXeDB.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Code\C#\ASP.net MVC\HeThongQuanLySieuXe\HeThongQuanLySieuXe\Models\SIeuXeDb.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

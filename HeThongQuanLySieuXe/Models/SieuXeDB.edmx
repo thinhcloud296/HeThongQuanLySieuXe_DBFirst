@@ -130,6 +130,7 @@
           <Property Name="MauSac" Type="nvarchar" MaxLength="50" />
           <Property Name="NamSanXuat" Type="int" />
           <Property Name="GiaBanXe" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="HinhAnh" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <Association Name="FK__BaoHanhXe__MaKha__5535A963">
           <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
@@ -504,6 +505,7 @@
           <Property Name="MauSac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="NamSanXuat" Type="Int32" />
           <Property Name="GiaBanXe" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="HinhAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="BaoHanhXes" Relationship="Self.FK__BaoHanhXe__MaXe__5441852A" FromRole="Xe" ToRole="BaoHanhXe" />
           <NavigationProperty Name="HopDongMuaBans" Relationship="Self.FK__HopDongMua__MaXe__47DBAE45" FromRole="Xe" ToRole="HopDongMuaBan" />
           <NavigationProperty Name="PhieuNhapKhoes" Relationship="Self.FK__PhieuNhapK__MaXe__3E52440B" FromRole="Xe" ToRole="PhieuNhapKho" />
@@ -665,7 +667,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CuaHangXeEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CuaHangXeEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BaoHanhXes" EntityType="Self.BaoHanhXe" />
           <EntitySet Name="DichVus" EntityType="Self.DichVu" />
           <EntitySet Name="HoaDonBanHangs" EntityType="Self.HoaDonBanHang" />
@@ -735,7 +737,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CuaHangXeModelStoreContainer" CdmEntityContainer="CuaHangXeEntities">
+        <EntityContainerMapping StorageEntityContainer="CuaHangXeModelStoreContainer" CdmEntityContainer="CuaHangXeEntities1">
           <EntitySetMapping Name="BaoHanhXes">
             <EntityTypeMapping TypeName="CuaHangXeModel.BaoHanhXe">
               <MappingFragment StoreEntitySet="BaoHanhXe">
@@ -870,6 +872,7 @@
                 <ScalarProperty Name="MauSac" ColumnName="MauSac" />
                 <ScalarProperty Name="NamSanXuat" ColumnName="NamSanXuat" />
                 <ScalarProperty Name="GiaBanXe" ColumnName="GiaBanXe" />
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
